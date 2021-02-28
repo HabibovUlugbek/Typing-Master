@@ -1,0 +1,138 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+header {
+  height: 20vh;
+  background-color: rgb(112, 106, 106);
+}
+.app-name{
+  background-color:rgb(112, 106, 106);
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navlink {
+  position: relative;
+  text-decoration: none;
+  margin: 0 5px;
+  
+  color: darkorange;
+  padding: 5px;
+}
+.navlink:after {
+  content: "";
+  position: absolute;
+  background-color: darkorange;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: 0;
+  transition: .2s;
+}
+.navlink:hover:after {
+  width: 100%;
+}
+.container {
+  width: 300px;
+  margin: 10px auto;
+  color: white;
+}
+.container p span {
+  color: rgb(9, 182, 9);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.word{
+  margin: 20px 0;
+  font-size: 40px;
+}
+.input {
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  width: 90%;
+}
+.true {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.instructor {
+  width: 90%;
+  background-color: #666666;
+  padding: 7px;
+  margin: 10px auto;
+}
+.instructor h3{
+  margin-bottom: 8px;
+}
+.btn-group{
+  display: flex;
+  justify-self: center;
+}
+.levels{
+  color:rgb(180, 199, 7);
+  text-transform: uppercase;
+  margin: 0 10px;
+  line-height: 57px;
+}
+.btn-group button {
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin: 15px 6px;
+  color: white;
+  font-weight: bold;
+}
+.easy{
+  background-color: blue;
+}
+.medium{
+  background-color: yellowgreen;
+}
+.hard{
+  background-color: red;
+}
+.home{
+  background:url(./img/background.jpg) no-repeat center center / cover;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link {
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  background-color: aqua;
+  border-radius: 15px;
+  border: 2px solid aqua ;
+}
+.link:hover{
+  background-color: transparent;
+  color: aqua;
+}
